@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_250">250dp</dimen>
+    <dimen name="size_300">300dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_50">45dp</dimen>
+
+
+    <dimen name="textsize_25">25sp</dimen>
+</resources>

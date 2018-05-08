@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.github.florent37.shapeofview.shapes.DiagonalView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_300"
+            android:elevation="4dp"
+            app:shape_diagonal_angle="7"
+            app:shape_diagonal_direction="left"
+            app:shape_diagonal_position="bottom">
+
+            <!-- YOUR CONTENT -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header_image" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/taylorswift"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/avenir_book"
+                android:text="Taylor Swift"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_25" />
+
+        </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/btnOpenMenu"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"
+            android:padding="@dimen/size_10"
+            android:layout_margin="@dimen/size_10"
+            android:scaleType="centerInside"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/menu" />
+
+
+        <ImageButton
+            android:id="@+id/btnOpenMore"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"
+            android:layout_margin="@dimen/size_10"
+            android:layout_gravity="right"
+            android:scaleType="centerInside"
+            android:padding="@dimen/size_10"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/more" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_300" />
+
+
+        <com.tvsoft.circlemenuanimation.FilterMenuLayout
+            android:id="@+id/filter_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cm_centerRight="30dp"
+            app:cm_centerTop="250dp"
+            app:cm_collapsedRadius="24dp"
+            app:cm_expandedRadius="96dp"
+            app:cm_primaryColor="#ff3163"
+            app:cm_primaryDarkColor="#ce3d68" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
